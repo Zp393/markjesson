@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camella Homes | Affordable House & Lot for Sale</title>
+    <meta name="description" content="Find your dream home with Camella! Explore our model houses with complete features and flexible financing options.">
+    <meta name="keywords" content="Camella Homes, House and Lot, Affordable Housing, Real Estate, Buy House in Batangas, Pre-Selling Homes">
+    <meta name="author" content="Mark Jesson Bataller">
+    <meta property="og:title" content="Camella Homes | Affordable House & Lot for Sale">
+    <meta property="og:description" content="Find your dream home with Camella! Explore our model houses with complete features and flexible financing options.">
+    <meta property="og:image" content="images/house1.jpg">
+    <meta property="og:url" content="https://bhatzwebsolutions.com/properties/camella.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://bhatzwebsolutions.com/properties/camella.html">
+    <link rel="stylesheet" href="camella-styles.css">
+    <script defer src="camella-script.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Real Estate</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#model">Model</a></li>
+            <li><a href="#rfo">RFO</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </nav> 
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>Welcome to Camella Homes</h1>
+            <p>Discover beautiful and affordable homes in Batangas.</p>
+            <a href="#contact" class="btn" aria-label="Inquire Now">Inquire Now</a>
+        </div>
+    </header>
+
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="model">
+        <h2>Our Model Homes</h2>
+        <div class="grid">
+            <img src="images/specs1.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/specs2.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/specs3.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/specs4.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/specs5.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/specs6.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/specs7.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+        </div>
+
+        <h2>Our Amenities</h2>
+        <div class="grid">
+            <img src="images/amenities1.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/amenities2.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/amenities3.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/amenities4.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/amenities5.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/amenities6.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/amenities7.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/amenities8.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+        </div>
+
+        <h2>Our RFO</h2>
+        <div class="grid" id="rfo">
+            <img src="images/rfo1.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/rfo2.png" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+        </div>
+    </section>
+
+    <!-- Video Embed Section -->
+    <section class="video" id="tour">
+        <h2>Watch Our Video</h2>
+        <iframe src="https://drive.google.com/file/d/1G1RAtkWWcdWQqDiUIjSdZYja5C4av74K/preview" width="640" height="480" loading="lazy" allow="autoplay"></iframe>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h3>Get in Touch</h3>
+        <form action="https://formsubmit.co/markjessonrealestateassociate@gmail.com" method="POST">
+            <label>Name: <input type="text" name="name" required></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+            <label>Phone: <input type="tel" name="phone" pattern="[0-9]{10,15}" required></label><br>
+            <label>Message: <textarea name="message" required></textarea></label><br>
+            <button type="submit">Send</button>
+          </form>
+          
+    </section>
+
+    <!-- Floating Contact Button -->
+    <a href="#contact" class="contact-btn" aria-label="Contact Us">Contact Us</a>
+
+    <!-- Modal for Image Preview -->
+    <div class="modal" id="imageModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Modal Image">
+    </div>
+
+    <!-- Floating Contact Button -->
+    <a href="#contact" class="contact-btn" aria-label="Contact Us">Contact Us</a>
+
+    <!-- Modal for Image Preview -->
+    <div class="modal" id="imageModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Modal Image">
+    </div>
+
+    <footer>
+        <p>© 2025 MarkJesson | Powered by <a href="https://bhatzwebsolutions.com" target="_blank">BhatZ Web Solutions</a></p><br>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+
+</body>
+</html>
