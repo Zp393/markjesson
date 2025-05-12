@@ -19,6 +19,17 @@ document.querySelectorAll('.btn, .contact-btn').forEach(button => {
     });
 });
 
+//specs button
+
+function toggleDetails(listId) {
+            const specsList = document.getElementById(listId);
+            if (specsList.style.display === 'none' || specsList.style.display === '') {
+                specsList.style.display = 'block'; // Show the list
+            } else {
+                specsList.style.display = 'none'; // Hide the list
+            }
+        }
+
 // Image Modal Functionality
 function openModal(src) {
     const modal = document.getElementById('imageModal');
@@ -41,27 +52,3 @@ window.onclick = function(event) {
 }
 
 
-//Light Box
-const images = document.querySelectorAll('.photo-gallery img');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.querySelector('.lightbox-img');
-  const closeBtn = document.querySelector('.close-btn');
-
-  images.forEach(img => {
-    img.addEventListener('click', () => {
-      lightbox.style.display = 'flex';
-      lightboxImg.src = img.dataset.full;
-      lightboxImg.alt = img.alt;
-    });
-  });
-
-  closeBtn.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-  });
-
-  // Close on click outside the image
-  lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-      lightbox.style.display = 'none';
-    }
-  });

@@ -20,10 +20,15 @@
 
 </head>
 <body>
+    
+<div class="background-image"></div> <!-- Background image div -->
+    <div class="background-overlay"></div> <!-- Overlay for darkening -->
+    
     <nav class="navbar">
         <div class="logo">Mark Jesson | Real Estate Associate</div>
         <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
+            <li><a href="#model">Model</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="hamburger" onclick="toggleMenu()">☰</button>
@@ -31,29 +36,22 @@
 
     <!-- Hero Section -->
     <header class="hero">
-        <div class="bg-images">
-          <div class="bg-image" style="background-image: url('images/welcome-home1.jpg');"></div>
-        </div>
         <div class="overlay">
-          <h1>Welcome to Lynville Homes</h1>
-          <p>Discover beautiful and affordable homes in Batangas.</p>
-          <a href="#contact" class="btn" aria-label="Inquire Now">Inquire Now</a>
+            <h1>Welcome to Lynville</h1>
+            <p>Discover beautiful and affordable homes in Batangas.</p>
+            <a href="#contact" class="btn" aria-label="Inquire Now">Inquire Now</a>
         </div>
-      </header>
-      
+    </header>
 
 
-    <!-- Model -->
-     
-     
-    <section class="model-section">
-        <div class="model-card">
-          <img src="images/zerina.jpg" alt="Zerina Model Home">
-          <div class="model-info">
-            <h2>Zerina Model</h2>
-            <p>𝗭𝗲𝗿𝗶𝗻𝗮 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗦𝗶𝗻𝗴𝗹𝗲 𝗔𝘁𝘁𝗰𝗵𝗲𝗱 𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗲 𝗧𝘂𝗿𝗻𝗼𝘃𝗲𝗿<br>
-
-                👉Lot area: 80SQM<br>
+    <!-- Gallery Section -->
+    <section class="gallery" id="model">
+        <h2>Zerina Model</h2>
+        
+        <p>𝗭𝗲𝗿𝗶𝗻𝗮 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗦𝗶𝗻𝗴𝗹𝗲 𝗔𝘁𝘁𝗰𝗵𝗲𝗱 𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗲 𝗧𝘂𝗿𝗻𝗼𝘃𝗲𝗿</p>
+        
+        <button class="show-button" onclick="toggleDetails('specsList1')">Show Details</button>
+            <p class="specs" id="specsList1">👉Lot area: 80SQM<br>
                 👉Floor area: 50.8SQM<br>
                 <br>
                 ✅Dining, Living, Kitchen area<br>
@@ -82,25 +80,23 @@
                 5 Yrs : 44,733.00<br>
                 <br>
                 Required income for 30yrs: 41,000</p><br>
-            <a href="#contact" class="btn">Contact Us</a>
-          </div>
-
-          <div class="photo-gallery">
-            <img src="images/zerina1.jpg" alt="Zerina Kitchen" data-full="images/zerina1.jpg">
-            <img src="images/zerina2.jpg" alt="Zerina Bathroom" data-full="images/zerina2.jpg">
-            <img src="images/zerina3.jpg" alt="Zerina Living Room" data-full="images/zerina3.jpg">
-            <img src="images/zerina4.jpg" alt="Zerina Bedroom 1" data-full="images/zerina4.jpg">
-            <img src="images/zerina5.jpg" alt="Zerina Bedroom 2" data-full="images/zerina5.jpg">
-            <img src="images/zerina6.jpg" alt="Zerina Dining Area" data-full="images/zerina6.jpg">
-            <img src="images/zerina7.jpg" alt="Zerina Garage" data-full="images/zerina7.jpg">
-          </div>
+        
+        <div class="grid">
+            <img src="images/zerina.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina1.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina2.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina3.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina4.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina5.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina6.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina7.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
         </div>
-      
-        <div class="model-card">
-          <img src="images/sofia.jpg" alt="Sofia Model Home">
-          <div class="model-info">
-            <h2>Sofia Model</h2>
-            <p>🏡SOFIA DELUXE Duplex<br>
+
+        <h2>Sofia Model</h2>
+        
+        <p>🏡SOFIA DELUXE Duplex</p>
+        <button class="show-button" onclick="toggleDetails('specsList2')">Show Details</button>
+            <p class="specs" id="specsList2">
                 Lot Area : 70sqm <br>
                 Floor area : 44sqm<br>
                 Semi-Complete <br>
@@ -133,25 +129,21 @@
                 5 Yrs : 33,647.00<br>
                 <br>
                 Required income for 30yrs: 31,000</p><br>
-            <a href="#contact" class="btn">Contact Us</a>
-          </div>
-
-          <div class="photo-gallery">
-            <img src="images/sofia1.jpg" alt="Zerina Kitchen" data-full="images/sofia1.jpg">
-            <img src="images/sofia2.jpg" alt="Zerina Bathroom" data-full="images/sofia2.jpg">
-            <img src="images/sofia3.jpg" alt="Zerina Living Room" data-full="images/sofia3.jpg">
-            <img src="images/sofia4.jpg" alt="Zerina Bedroom 1" data-full="images/sofia4.jpg">
-            <img src="images/sofia5.jpg" alt="Zerina Bedroom 2" data-full="images/sofia5.jpg">
-            <img src="images/sofia6.jpg" alt="Zerina Dining Area" data-full="images/sofia6.jpg">
-            <img src="images/sofia7.jpg" alt="Zerina Garage" data-full="images/sofia7.jpg">
-            <img src="images/sofia8.jpg" alt="Zerina Dining Area" data-full="images/sofia8.jpg">
-            <img src="images/sofia9.jpg" alt="Zerina Garage" data-full="images/sofia9.jpg">
-          </div>
+        
+        <div class="grid">
+            <img src="images/zerina.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina1.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina2.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina3.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina4.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina5.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina6.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/zerina7.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
         </div>
-        </div>
-      </section>
-      
 
+        
+  
+    </section>
 
 
     <section class="contact" id="contact">
@@ -165,12 +157,6 @@
           </form>
           
     </section>
-
-    <div id="lightbox" class="lightbox">
-        <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Fullscreen Image">
-      </div>
-      
 
     <!-- Floating Contact Button -->
     <a href="#contact" class="contact-btn" aria-label="Contact Us">Contact Us</a>
@@ -194,6 +180,6 @@
         <p>© 2025 MarkJesson | Powered by <a href="https://bhatzwebsolutions.com" target="_blank">BhatZ Web Solutions</a></p><br>
         <a href="privacy.html">Privacy Policy</a>
     </footer>
-
 </body>
+
 </html>

@@ -19,6 +19,16 @@ document.querySelectorAll('.btn, .contact-btn').forEach(button => {
     });
 });
 
+//specs button
+
+function toggleDetails(listId) {
+            const specsList = document.getElementById(listId);
+            if (specsList.style.display === 'none' || specsList.style.display === '') {
+                specsList.style.display = 'block'; // Show the list
+            } else {
+                specsList.style.display = 'none'; // Hide the list
+            }
+        }
 
 // Image Modal Functionality
 function openModal(src) {
@@ -40,3 +50,5 @@ window.onclick = function(event) {
         closeModal();
     }
 }
+
+

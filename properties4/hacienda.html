@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hacienda del Sol | Affordable House & Lot for Sale</title>
+<meta name="description" content="Find your dream home with Hacienda del Sol! Explore our model houses with complete features and flexible financing options.">
+<meta name="keywords" content="Hacienda del Sol, House and Lot, Affordable Housing, Real Estate, Buy House in Batangas, Pre-Selling Homes">
+<meta name="author" content="Mark Jesson Bataller">
+<meta property="og:title" content="Hacienda del Sol | Affordable House & Lot for Sale">
+<meta property="og:description" content="Find your dream home with Hacienda del Sol! Explore our model houses with complete features and flexible financing options.">
+<meta property="og:image" content="images/house1.jpg">
+<meta property="og:url" content="https://bhatzwebsolutions.com/properties/hacienda-del-sol.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://bhatzwebsolutions.com/properties/hacienda-del-sol.html">
+<link rel="stylesheet" href="hacienda.syles.css">
+<script defer src="hacienda.script.js"></script>
+
+</head>
+<body>
+    
+<div class="background-image"></div> <!-- Background image div -->
+    <div class="background-overlay"></div> <!-- Overlay for darkening -->
+    
+    <nav class="navbar">
+        <div class="logo">Mark Jesson | Real Estate Associate</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#model">Model</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </nav> 
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>Welcome to Hacienda Del Sol</h1>
+            <p>Discover beautiful and affordable homes in Batangas.</p>
+            <a href="#contact" class="btn" aria-label="Inquire Now">Inquire Now</a>
+        </div>
+    </header>
+
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="model">
+        <h2>Hacienda Del Sol</h2>
+        <button class="show-button" onclick="toggleDetails('specsList1')">Show Details</button>
+        <ul class="specs" id="specsList1">
+                <li>👌 Provision for 2 to 3 bedroom</li>
+                <li>👌Kitchen area</li>
+                <li>👌Free Cabinet</li>
+                <li>👌Living area</li>
+                <li>👌 Common area </li>
+                <li>👌 1bath and toilet</li>
+                <li>👌 Carport</li>
+                <li>👌 with ceiling,painted interior and exterior</li>
+                <li>👌tiles on first floor</li>
+            </ul>
+        <div class="grid">
+            <img src="images/delsol3.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol4.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol5.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol6.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol7.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol8.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol9.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol10.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol11.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol12.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol13.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol14.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol15.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol16.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol17.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol18.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+            <img src="images/delsol20.jpg" alt="Model 1" class="gallery-item" onclick="openModal(this.src)">
+        </div>
+
+        
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h3>Get in Touch</h3>
+        <form action="https://formsubmit.co/markjessonrealestateassociate@gmail.com" method="POST">
+            <label>Name: <input type="text" name="name" required></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+            <label>Phone: <input type="tel" name="phone" pattern="[0-9]{10,15}" required></label><br>
+            <label>Message: <textarea name="message" required></textarea></label><br>
+            <button type="submit">Send</button>
+          </form>
+          
+    </section>
+
+    <!-- Floating Contact Button -->
+    <a href="#contact" class="contact-btn" aria-label="Contact Us">Contact Us</a>
+
+    <!-- Modal for Image Preview -->
+    <div class="modal" id="imageModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Modal Image">
+    </div>
+
+    <!-- Floating Contact Button -->
+    <a href="#contact" class="contact-btn" aria-label="Contact Us">Contact Us</a>
+
+    <!-- Modal for Image Preview -->
+    <div class="modal" id="imageModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Modal Image">
+    </div>
+
+    <footer>
+        <p>© 2025 MarkJesson | Powered by <a href="https://bhatzwebsolutions.com" target="_blank">BhatZ Web Solutions</a></p><br>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+</body>
+</html>
